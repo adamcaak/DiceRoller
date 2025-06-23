@@ -33,7 +33,7 @@ struct ContentView: View {
                         numberOfDice += 1
                     }
                 }
-                .disabled(numberOfDice == 3)
+                .disabled(numberOfDice == 5)
                 .buttonStyle(.bordered)
             }
         }
