@@ -16,8 +16,11 @@ struct DiceView: View {
                 .resizable()
                 .frame(width: 100, height: 100)
             Button("Roll") {
-                numerOfPips = Int.random(in: 1...6)
+                withAnimation {
+                    numerOfPips = Int.random(in: 1...6)
+                }
             }
+            .buttonStyle(.bordered)
         }
     }
 }
